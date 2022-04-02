@@ -1,3 +1,3 @@
 # Time
 
-Visualize your day as 144 Squares, where each Square represents 10 minutes.
+Visualize your day as 144 blocks, where each block represents 10 minutes.
