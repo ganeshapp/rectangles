@@ -162,8 +162,6 @@ form button {
 
 .todo {
   margin: 1rem;
-  /* background: rgb(247, 226, 223); */
-  /* color: black; */
   font-size: 19px;
   display: flex;
   justify-content: space-between;
