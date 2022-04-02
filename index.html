@@ -15,6 +15,7 @@
   <meta name="twitter:image" content="https://rectangles.app/assets/apple-touch-icon.png">
   <meta name="twitter:description" content="Visualize your day as 144 rectangles, where each rectangle represents 10 minutes.">
   <meta name="twitter:title" content="Rectangles">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
   <main class="flex flex-wrap justify-around p-2">
@@ -23,7 +24,7 @@
     </noscript>
     <section class="grid-container"></section>
     <section>
-      <h1 class="border-b-3 mb-0">Rectangles</h1>
+      <h1 class="border-b-3 mb-0">Time</h1>
       <p>There are 144 rectangles.</p>
       <p>Each rectangle represents 10 minutes of your day.</p>
       <div class="flex flex-wrap items-center">
@@ -34,16 +35,30 @@
         <div class="grid-item m-1"></div>
         <p>Time that you still have left today</p>
       </div>
-      <div class="border-b-3">
-        <p>To put it into a perspective (hover over each item):</p>
-        <ul>
-          <li class="m-1 js-hover" title="0.833 rectangles - 8 minutes and 20 seconds" data-rectangles="0.833">A time for a sunlight to reach the Earth</li>
-          <li class="m-1 js-hover" title="30 rectangles - 5 hours" data-rectangles="30">Average psilocybin mushroom trip</li>
-          <li class="m-1 js-hover" title="45 rectangles - 7.5 hours" data-rectangles="45">A good night's sleep</li>
-          <li class="m-1 js-hover" title="48 rectangles - 8 hours" data-rectangles="48">Average workday</li>
-        </ul>
+      <div id="form" class="border-b-3">
+        <h1 class="border-b-3 mb-0">Focus</h1>
+        <form>
+            <input class="todo-input" type="text" placeholder="Add a task.">
+            <button class="todo-btn button" type="submit">Add</button>
+        </form>
+        <div id="myUnOrdList">
+          <ul class="todo-list">
+              <!-- (Basic Format)
+              <div class="todo">
+                  items added to this list:
+                  <li></li>
+                  <button>delete</button>
+                  <button>check</button>
+              </div> -->
+          </ul>
       </div>
+    </div>
 
+    
+  <script src="assets/main.js" type="text/javascript"> </script>
+    </section>
+    <section>
+      
     </section>
   </main>
 </body>
